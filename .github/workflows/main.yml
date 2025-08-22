@@ -39,10 +39,10 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: donload-artifcat
+      - name: Dist-files
         uses: actions/download-artifact@v4
         with:
-          name: dist-files
+          name: Dist-files
       - name: display the contents
         run: ls
         
