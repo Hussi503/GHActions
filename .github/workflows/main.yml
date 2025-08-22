@@ -32,7 +32,20 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with: 
-          name: upload artifacts
+          name: Dist-files
           path: |
               dist
-              package.json
+  check-deploy:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: donload-artifcat
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-files
+      - name: display the contents
+        run: ls
+        
+    
+    
+             
