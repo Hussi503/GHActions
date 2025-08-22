@@ -34,5 +34,5 @@ jobs:
         with: 
           name: upload artifacts
           path: |
-              dist-1
-              dist-2
+              dist
+              package.json
