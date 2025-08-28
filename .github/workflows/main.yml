@@ -52,7 +52,7 @@ jobs:
       - name: display the contents
         run: ls
       - name: output filenames
-        run: echo ${{ needs.deploy.outputs.script-file }}
+        run: echo "${{ needs.deploy.outputs.script-file }}"
         
     
     
